@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="suksawat">
+    <title>link-suksawat</title>
+    <style>
+        img{
+            width: 50px;
+        }
+        /*
+        a:link{
+            color: darkorange;
+            text-decoration: none;
+            background-color: transparent;
+        }
+        a:visited{
+            color: rgb(238, 126, 145);
+            text-decoration: none;
+            background-color: transparent;
+        }
+        a:hover{
+            background-color: rgb(0, 3, 0);
+            color: aliceblue;
+        }
+        a:active{
+            background-color: rgb(0, 3, 0);
+            color: rgb(246, 255, 84);
+        }
+        */
+
+        a:link , a:visited{
+            background-color: rgb(255, 0, 0);
+            color: white;
+            text-decoration: none;
+            padding: 5px 30px;
+            border-radius: 5px;
+        }
+        a:hover , a:active{
+            background-color: black;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Welcome to Suksawat Homepage</h1>
+    <hr>
+    <h3 style="text-align: right; "><a href="home.html" style="background-color: white;"><img src="https://thumbs.dreamstime.com/b/back-arrow-icon-special-red-round-button-back-arrow-icon-isolated-special-red-round-button-abstract-illustration-102221714.jpg" alt="back button"></a></h3>
+    <h2>Absolute URL</h2>
+    <p>
+        <a href="https://www.npru.ac.th">NPRU</a>
+    </p>
+    <hr>
+    <h2 id="top">Target Attribute</h2>
+    <p><a href="https://www.npru.ac.th" target="_self">NPRU- _self</a></p>
+    <p><a href="https://www.npru.ac.th" target="_blank">NPRU- _blank</a></p>
+    <p><a href="https://www.npru.ac.th" target="_top">NPRU- _top</a></p>
+    <p><a href="https://www.npru.ac.th" target="_parent">NPRU- _parent</a></p>
+    <hr>
+    <h2>Relative URL</h2>
+    <p>
+        <a href="home.html">Home</a>
+        <a href="images/tree/flower.html">Home</a>
+        <a href="../../home.html">Home</a>
+    </p>
+    <hr>
+    <h2>Link to Mail</h2>
+    <p>
+        <a href="mailto:s.suksawat@webmail.npru.ac.th">Send mail to me</a>
+    </p>
+    <hr>
+    <h2>Button link</h2>
+    <p>
+        <button onclick="document.location='home.html'">HOME</button>
+        <button type="submit">ยืนยัน</button>
+        <button type="reset">เคลียร์ข้อมูล</button>
+    </p>
+    <hr>
+    <p>
+        <a href="#top">Jump to Top</a>
+        <a href="week04_01_image.html#flower">Jump to File-image</a>
+    </p>
+</body>
+</html>
